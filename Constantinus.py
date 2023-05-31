@@ -1,5 +1,6 @@
 import discord
 from main import my_token
+from botlogic import *
 
 # Переменная intents - хранит привилегии бота
 intents = discord.Intents.default()
