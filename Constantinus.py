@@ -20,8 +20,12 @@ async def on_message(message):
         await message.channel.send("Hi!")
     elif message.content.startswith('$bye'):
         await message.channel.send("Goodbye!")
+    elif message.content.startswith('$smile'):
+        await message.channel.send(gen_emodji())
     elif message.content.startswith('$coin'):
         await message.channel.send(flip_coin())
+    elif message.content.startswith('$pass'):
+        await message.channel.send(gen_pass(10))
 
 @client.event
 async def on_member_join(member):
